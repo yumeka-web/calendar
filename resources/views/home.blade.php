@@ -54,13 +54,15 @@
                                                         </button>
 
                                                         {{-- share --}}
-                                                        <a href="#" class="dropdown-item text-warning">
-                                                            <i class="fa-solid fa-share"> Share </i>
-                                                        </a>
-                                                        
+                                                        <button class="dropdown-item text-warning" data-bs-toggle="modal" data-bs-target="#share-schedule-{{ $schedule->id }}">
+                                                            <i class="fa-solid fa-share"></i> Share
+                                                        </button>
+
+
                                                     </div>
                                                     {{-- include modal --}}
                                                     @include('schedule.modal.delete')
+                                                    @include('schedule.modal.share-schedule')
                                                 </div>
                                             @endif
                                         </div>

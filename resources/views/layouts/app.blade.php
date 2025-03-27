@@ -50,6 +50,7 @@
                                 </li>
                             @endif
                         @else
+                        
                         <li class="nav-item">
                             <a href="{{ route('schedule.create') }}" class="btn btn-primary btn-sm mt-1">
                                 <i class="fa-regular fa-calendar"></i>  Create Schedule
